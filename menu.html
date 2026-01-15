@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete menu featuring vegetarian combos, Indian breads, pizza, pasta, starters, and more at Fresh Roast.">
+    <title>Menu - Fresh Roast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Fresh Roast" class="logo-img">
+                <span class="logo-text">Fresh Roast</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Visit</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <div class="menu-header">
+        <div class="menu-header-image">
+            <img src="cof.png" alt="Fresh Roast" class="menu-header-img" loading="lazy">
+        </div>
+        <h1 class="menu-header-title">Our Menu</h1>
+        <p class="menu-header-subtitle">Fresh Roast</p>
+        <p class="menu-header-subtitle">100% Vegetarian</p>
+        <p class="menu-header-note">*Taxes as applicable</p>
+    </div>
+
+    <!-- Category Navigation -->
+    <div class="menu-nav">
+        <div class="menu-nav-container">
+            <ul class="menu-nav-list">
+                <li class="menu-nav-item"><a href="#combos" class="menu-nav-link">Combos</a></li>
+                <li class="menu-nav-item"><a href="#indian-breads" class="menu-nav-link">Indian Breads</a></li>
+                <li class="menu-nav-item"><a href="#basmatties" class="menu-nav-link">Basmatties</a></li>
+                <li class="menu-nav-item"><a href="#accompaniment" class="menu-nav-link">Accompaniment</a></li>
+                <li class="menu-nav-item"><a href="#pizza" class="menu-nav-link">Pizza</a></li>
+                <li class="menu-nav-item"><a href="#pasta" class="menu-nav-link">Pasta</a></li>
+                <li class="menu-nav-item"><a href="#salad" class="menu-nav-link">Salad</a></li>
+                <li class="menu-nav-item"><a href="#soups" class="menu-nav-link">Hot Soups</a></li>
+                <li class="menu-nav-item"><a href="#starters" class="menu-nav-link">Starters</a></li>
+                <li class="menu-nav-item"><a href="#drinks" class="menu-nav-link">Liquid Refreshments</a></li>
+                <li class="menu-nav-item"><a href="#tea-coffee" class="menu-nav-link">Tea & Coffee</a></li>
+                <li class="menu-nav-item"><a href="#between-layers" class="menu-nav-link">Between Layers</a></li>
+                <li class="menu-nav-item"><a href="#oriental" class="menu-nav-link">Oriental Kitchen</a></li>
+                <li class="menu-nav-item"><a href="#north-indian" class="menu-nav-link">North Indian</a></li>
+                <li class="menu-nav-item"><a href="#dal" class="menu-nav-link">Dal</a></li>
+                <li class="menu-nav-item"><a href="#gujarati-nasto" class="menu-nav-link">Gujarati Nasto</a></li>
+                <li class="menu-nav-item"><a href="#dessert" class="menu-nav-link">Dessert/Sweet</a></li>
+                <li class="menu-nav-item"><a href="#gujarati-tiffin" class="menu-nav-link">Gujarati Tiffin</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Combos -->
+            <section class="menu-section" id="combos">
+                <h2 class="menu-category-title">COMBOS</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Maharaja Combo</h3>
+                            <span class="menu-item-price">₹699</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>Paneer Butter Masala - 300gms</li>
+                            <li>Dal Makhani - 300gms</li>
+                            <li>Butter Lachha Paratha - 4pcs</li>
+                            <li>Steam Rice - 200gms</li>
+                            <li>Roasted Papad - 3pcs</li>
+                            <li>Pickle & Onion Slices - 3pcs</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Italian Combo</h3>
+                            <span class="menu-item-price">₹649</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>R. Special Pizza - 10inch</li>
+                            <li>Vegetable Cheese Grilled Sandwich</li>
+                            <li>Creole Pasta - 300gms</li>
+                            <li>Thumbs Up - 600ml bottle</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Punjabi Combo</h3>
+                            <span class="menu-item-price">₹449</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>R Special Vegetable - 300gms</li>
+                            <li>Butter Roti - 6pcs</li>
+                            <li>Salad, Papad - 3pcs</li>
+                            <li>Achaar & Chaas</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Economic Combo</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>Dal Khichadi - 600gms</li>
+                            <li>Curd - 250gms</li>
+                            <li>Papad - 3pcs</li>
+                            <li>Pickle & Onion</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Chole Kulcha Combo</h3>
+                            <span class="menu-item-price">₹199</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>Chhole - 200gsm</li>
+                            <li>Kulcha - 1pcs</li>
+                            <li>Lachha Onion & Lemon Wedges</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Kids Combo - I</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                        <ul class="menu-item-details">
+                            <li>Pizza - 6inch</li>
+                            <li>French Fries</li>
+                            <li>Cold Drink - 200ml bottle</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gujarati Tiffin -->
+            <section class="menu-section" id="gujarati-tiffin">
+                <h2 class="menu-category-title">GUJARATI TIFFIN</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Deluxe Tiffin</h3>
+                            <span class="menu-item-price">₹700</span>
+                        </div>
+                        <p class="menu-item-description">(1.6 Kg)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Family Tiffin</h3>
+                            <span class="menu-item-price">₹1850</span>
+                        </div>
+                        <p class="menu-item-description">(4.8 Kg)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">Jumbo Tiffin</h3>
+                            <span class="menu-item-price">₹2950</span>
+                        </div>
+                        <p class="menu-item-description">(8 Kg)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Indian Breads -->
+            <section class="menu-section" id="indian-breads">
+                <h2 class="menu-category-title">INDIAN BREADS FROM TANDOOR</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ROTI (Plain / Butter)</h3>
+                            <span class="menu-item-price">₹70/75</span>
+                        </div>
+                        <p class="menu-item-description">Whole wheat flour dough flattened and cooked in tandoor</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">NAAN / KULCHA (Plain / Butter)</h3>
+                            <span class="menu-item-price">₹85/90</span>
+                        </div>
+                        <p class="menu-item-description">Dough of refined wheat flour flattened and baked in a clay pit over charcoal</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHEESE CHILLY NAAN</h3>
+                            <span class="menu-item-price">₹115</span>
+                        </div>
+                        <p class="menu-item-description">Tandoori butter naan stuffed with cheese and chilies</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">GARLIC NAAN</h3>
+                            <span class="menu-item-price">₹95</span>
+                        </div>
+                        <p class="menu-item-description">Soft white flour bread with fresh garlic and cooked in charcoal oven</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ONION KULCHA</h3>
+                            <span class="menu-item-price">₹95</span>
+                        </div>
+                        <p class="menu-item-description">Stuffed with onion and other spices and baked in tandoor</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">TANDOORI LACHHA PARATHA</h3>
+                            <span class="menu-item-price">₹95</span>
+                        </div>
+                        <p class="menu-item-description">A multi-layered whole wheat soft bread cooked in tandoor</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">TAWA ROTI / PARATHA - 2pcs</h3>
+                            <span class="menu-item-price">₹75</span>
+                        </div>
+                        <p class="menu-item-description">Homemade fulka roti / tawa paratha</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Basmatties -->
+            <section class="menu-section" id="basmatties">
+                <h2 class="menu-category-title">BASMATTIES</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">STEAMED RICE (275gms)</h3>
+                            <span class="menu-item-price">₹175</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">JEERA RICE (275gms)</h3>
+                            <span class="menu-item-price">₹195</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE PULAO (275gms)</h3>
+                            <span class="menu-item-price">₹225</span>
+                        </div>
+                        <p class="menu-item-description">Most popular rice dish with strong flavours and lots of veggies</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SUBZ BIRYANI (300gms)</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Steaming hot and aromatic one pot rice preparation with rich indian spices</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">DAL KHICHDI (300gms)</h3>
+                            <span class="menu-item-price">₹265</span>
+                        </div>
+                        <p class="menu-item-description">Hot and delicious one pot wholesome meal</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Accompaniment -->
+            <section class="menu-section" id="accompaniment">
+                <h2 class="menu-category-title">ACCOMPANIMENT</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">RAITA (MIXED VEGETABLE / BOONDI)</h3>
+                            <span class="menu-item-price">₹155</span>
+                        </div>
+                        <p class="menu-item-description">Classic Indian style yoghurt based preparation</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MASALA CHAAS</h3>
+                            <span class="menu-item-price">₹70</span>
+                        </div>
+                        <p class="menu-item-description">Butter milk with fresh coriander and roasted cumin</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MASALA PAPAD</h3>
+                            <span class="menu-item-price">₹75</span>
+                        </div>
+                        <p class="menu-item-description">Crispy papad topped with spicy salad and chaat masala</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ROASTED PAPAD (2pcs)</h3>
+                            <span class="menu-item-price">₹45</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">FRIED PAPAD</h3>
+                            <span class="menu-item-price">₹60</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pizza -->
+            <section class="menu-section" id="pizza">
+                <h2 class="menu-category-title">PIZZA (10" thin crust)</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MARGHERITA</h3>
+                            <span class="menu-item-price">₹395</span>
+                        </div>
+                        <p class="menu-item-description">Ever popular Margherita with fresh basil and cheese..... oodles of it!</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MILANO</h3>
+                            <span class="menu-item-price">₹415</span>
+                        </div>
+                        <p class="menu-item-description">A pizza over loaded of crunchy jalapeno, onions, capers and olives</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ITALIANO</h3>
+                            <span class="menu-item-price">₹415</span>
+                        </div>
+                        <p class="menu-item-description">Easy on spices with fresh tomatoes and delectable onion, capsicum</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ROMANIO</h3>
+                            <span class="menu-item-price">₹415</span>
+                        </div>
+                        <p class="menu-item-description">Exotic pizza that staggers under golden corn, olives, onion caramelized onion, sundried tomato with a hint of tabasco and cheese to go all around</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pasta -->
+            <section class="menu-section" id="pasta">
+                <h2 class="menu-category-title">PASTA</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHOICE OF PASTA (400gms)</h3>
+                            <span class="menu-item-price">₹425</span>
+                        </div>
+                        <p class="menu-item-description">Penne / Fusilli - Pick your Sauce</p>
+                        <ul class="menu-item-details">
+                            <li>ARABIATA - Sweet & sour tangy fresh tomato sauce</li>
+                            <li>ALFREDO - Parmesan cheese and butter in a mouth melting consistency</li>
+                            <li>CREOLE - When you can't decide red or white!</li>
+                            <li>Pesto - Pine nuts reduced to cream with fresh basil and coarse salt with first press olive oil</li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">LASAGNA</h3>
+                            <span class="menu-item-price">₹425</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BAKED MICRONI WITH PINEAPPLE</h3>
+                            <span class="menu-item-price">₹395</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE AU-GRATIN</h3>
+                            <span class="menu-item-price">₹395</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Salad -->
+            <section class="menu-section" id="salad">
+                <h2 class="menu-category-title">SALAD</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">GREEN SALAD</h3>
+                            <span class="menu-item-price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">THE ULTIMATE GREEK SALAD</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Nice and tangy tomatoes, olives, onions, bell peppers, & cucumber typically seasoned with olive, vinaigrette and fetta cheese</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hot Soups -->
+            <section class="menu-section" id="soups">
+                <h2 class="menu-category-title">HOT SOUPS</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ROASTED TOMATO WITH FRESH BASIL SOUP</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                        <p class="menu-item-description">Tomato soup with a dollop of rich cream seasoned with fresh basil</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BROCCOLI CHEDDAR / ALMOND SOUP</h3>
+                            <span class="menu-item-price">₹225</span>
+                        </div>
+                        <p class="menu-item-description">Creamy soup with tender broccoli florets infused with cheddar cheese or almond flakes</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE MANCHOW SOUP</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                        <p class="menu-item-description">Hot soup packed with oriental veggies, flavoured with soya</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MEXICAN TORTILLA SOUP</h3>
+                            <span class="menu-item-price">₹225</span>
+                        </div>
+                        <p class="menu-item-description">Mexican beans and seasoning at its best</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Starters -->
+            <section class="menu-section" id="starters">
+                <h2 class="menu-category-title">STARTERS</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BRUSCHETTA (6pcs)</h3>
+                            <span class="menu-item-price">₹315</span>
+                        </div>
+                        <p class="menu-item-description">Toasted bread rubbed in garlic & fresh basil topped with chopped tomatoes, olive</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CRUNCHY MUNCHY NACHOS</h3>
+                            <span class="menu-item-price">₹255</span>
+                        </div>
+                        <p class="menu-item-description">Crispy corn tortilla chips served with gooey cheese, Salsa & hot sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SAUTEED MUSHROOM (300gms)</h3>
+                            <span class="menu-item-price">₹335</span>
+                        </div>
+                        <p class="menu-item-description">Plump juicy button mushrooms in fresh crushed pepper, basil, herbs in olive oil</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">QUESADILLAS (2pcs)</h3>
+                            <span class="menu-item-price">₹325</span>
+                        </div>
+                        <p class="menu-item-description">Corn tortilla filled with cheese, corn, onion, Mexican beans and olive served with sour cream and salsa</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">JALAPENO CHEESE WRAPS (6pcs)</h3>
+                            <span class="menu-item-price">₹325</span>
+                        </div>
+                        <p class="menu-item-description">Hollowed jalapeno pockets filled with mozzarella and spices</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CRISPY CRUNCHY VEGETABLE (300gms)</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Golden brown exotic vegetable tossed with hot garlic sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">WATER CHESTNUT IN PLUM SAUCE (300gms)</h3>
+                            <span class="menu-item-price">₹370</span>
+                        </div>
+                        <p class="menu-item-description">Crispy chinese water chestnut in signature sweet chilly garlic sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE MANCHURIAN-Dry (300gms)</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Delicious crispy vegetable dumpling tossed with tangy garlic soya sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">HONEY CHILLY POTATO (300gms)</h3>
+                            <span class="menu-item-price">₹255</span>
+                        </div>
+                        <p class="menu-item-description">Crispy fried potatoes tossed in sweet & sour chilly sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MAKHMALI PANEER TIKKA (8pcs)</h3>
+                            <span class="menu-item-price">₹390</span>
+                        </div>
+                        <p class="menu-item-description">Soft paneer chunks cooked in charcoal tandoor seasoned with lime and chaat masala and served with fresh pudina chutney</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">HARA BHARA KABAB (8pcs)</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Mouth watering soft minced green vegetable kabab, flavoured with Indian spices and served with mint chutney</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">PESTO MALAI PANEER (8pcs)</h3>
+                            <span class="menu-item-price">₹390</span>
+                        </div>
+                        <p class="menu-item-description">Soft cottage cheese with a twist dressed in aromatic fresh pesto- basil</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SPINACH MOZZARELLA CHEESE BALLS (8pcs)</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Classic and highly rated spinach cheese balls accompanied with pesto- mayo sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">FRENCH FRIES (200gms)</h3>
+                            <span class="menu-item-price">₹180</span>
+                        </div>
+                        <p class="menu-item-description">Thin crispy potato strips, taste best with tomato ketchup</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Liquid Refreshments -->
+            <section class="menu-section" id="drinks">
+                <h2 class="menu-category-title">LIQUID REFRESHMENTS</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VIRGIN MOJITO</h3>
+                            <span class="menu-item-price">₹195</span>
+                        </div>
+                        <p class="menu-item-description">Splash of soda with cracked ice, sugar and lime juice</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">HIGH TIDE LEMON BLAZER</h3>
+                            <span class="menu-item-price">₹195</span>
+                        </div>
+                        <p class="menu-item-description">Freshly squeezed lemon stirred with mint and a twist of cranberry and pineapple</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SNAKE BITE</h3>
+                            <span class="menu-item-price">₹195</span>
+                        </div>
+                        <p class="menu-item-description">Fizzy recharger of black grape, cranberry and fresh lime juice</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">KIWI BERRY REFRESHER</h3>
+                            <span class="menu-item-price">₹205</span>
+                        </div>
+                        <p class="menu-item-description">Sweet & sour fresh kiwi cooler</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">COLD COFFEE</h3>
+                            <span class="menu-item-price">₹205</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MILK SHAKES</h3>
+                            <span class="menu-item-price">₹205</span>
+                        </div>
+                        <p class="menu-item-description">Vanilla / Chocolate / Strawberry</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">AERATED BEVERAGES</h3>
+                            <span class="menu-item-price">₹60</span>
+                        </div>
+                        <p class="menu-item-description">Coke/Thums Up / Sprite</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BOTTLED WATER / Vitamin B12</h3>
+                            <span class="menu-item-price">₹35/100</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tea & Coffee -->
+            <section class="menu-section" id="tea-coffee">
+                <h2 class="menu-category-title">TEA & COFFEE</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">READY MADE TEA / COFFEE</h3>
+                            <span class="menu-item-price">₹125</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">STEAMY COFFEE BREW</h3>
+                            <span class="menu-item-price">₹185</span>
+                        </div>
+                        <p class="menu-item-description">Hazelnut, Caramello, Mocha, Americano</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CAPPUCCINO</h3>
+                            <span class="menu-item-price">₹185</span>
+                        </div>
+                        <p class="menu-item-description">Espresso-based Italian coffee with cream foam</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ESPRESSO</h3>
+                            <span class="menu-item-price">₹175</span>
+                        </div>
+                        <p class="menu-item-description">Dark roasted beans forced through steam and boiling water</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Between Layers -->
+            <section class="menu-section" id="between-layers">
+                <h2 class="menu-category-title">BETWEEN LAYERS</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">GRILLED COTTAGE CHEESE SANDWICH</h3>
+                            <span class="menu-item-price">₹310</span>
+                        </div>
+                        <p class="menu-item-description">Sliced bread with bbq cottage cheese grilled in butter topped with onion, capsicum, and melted butter</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHEESY CORN CAPSICUM SANDWICH</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Sweet kernels of corn, chopped onion and capsicum in creamy cheese</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CALIFORNIA SANDWICH</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Healthy mix of veggie, tomato, crisp lettuce with ranch dressing</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MEXICAN ΜΑΝΙΑ</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                        <p class="menu-item-description">Flavours from Mexican beans with crunchy bell pepper and onions</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE CLUB SANDWICH</h3>
+                            <span class="menu-item-price">₹285</span>
+                        </div>
+                        <p class="menu-item-description">Cucumber, Tomato, Onion, Cottage Cheese</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHEESE CHILLY TOAST</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Oriental Kitchen -->
+            <section class="menu-section" id="oriental">
+                <h2 class="menu-category-title">FROM THE ORIENTAL KITCHEN</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE MANCHURIAN- Gravy (350gms)</h3>
+                            <span class="menu-item-price">₹335</span>
+                        </div>
+                        <p class="menu-item-description">Minced vegetable dumpling, tossed with soya chilly sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">STIR FRIED VEGETABLE (350gms)</h3>
+                            <span class="menu-item-price">₹355</span>
+                        </div>
+                        <p class="menu-item-description">Exotic vegetable in hot garlic soya sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHILLY GARLIC NOODLES (275gms)</h3>
+                            <span class="menu-item-price">₹315</span>
+                        </div>
+                        <p class="menu-item-description">Stir fried noodles tossed with spring onion, carrots, cabbage and capsicum mixed with soya chilly sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">VEGETABLE FRIED RICE (275gms)</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                        <p class="menu-item-description">Stir fried rice mixed with finely chopped vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">GREEN / RED THAI CURRY WITH HERBS RICE (600gms)</h3>
+                            <span class="menu-item-price">₹450</span>
+                        </div>
+                        <p class="menu-item-description">Exotic vegetables prepared in bursting flavours of Thailand served with herbs rice</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- North Indian -->
+            <section class="menu-section" id="north-indian">
+                <h2 class="menu-category-title">FROM THE KITCHEN OF NORTH</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHEESE BUTTER MASALA (350gms)</h3>
+                            <span class="menu-item-price">₹395</span>
+                        </div>
+                        <p class="menu-item-description">Super delicious soft and mouth watering</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">KHOYA KAJU (350gms)</h3>
+                            <span class="menu-item-price">₹375</span>
+                        </div>
+                        <p class="menu-item-description">Mawa in rich cashew gravy with delicate flavours</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">PANEER ANGARA (350gms)</h3>
+                            <span class="menu-item-price">₹365</span>
+                        </div>
+                        <p class="menu-item-description">Cottage cheese cooked in spicy tomato and onion gravy</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">PANEER BUTTER MASALA (350gms)</h3>
+                            <span class="menu-item-price">₹365</span>
+                        </div>
+                        <p class="menu-item-description">Slightly sweet creamy dish in rich tomato cashew gravy</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SUBZIYON KA MELA (350gms)</h3>
+                            <span class="menu-item-price">₹315</span>
+                        </div>
+                        <p class="menu-item-description">Mixed vegetables cooked in brown gravy</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">ALOO MUTTER / GOBI (300gms)</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                        <p class="menu-item-description">All time favourite Indian dish made with potatoes and green peas / gobi</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">JEERA ALOO (300gms)</h3>
+                            <span class="menu-item-price">₹255</span>
+                        </div>
+                        <p class="menu-item-description">Quick and simple mouth watering dish</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dal -->
+            <section class="menu-section" id="dal">
+                <h2 class="menu-category-title">DAL</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">DAL TADKA (350gms)</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                        <p class="menu-item-description">Dhaba style tadka recipe with rich aroma and spices</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">DAL FRY (350gms)</h3>
+                            <span class="menu-item-price">₹275</span>
+                        </div>
+                        <p class="menu-item-description">Tuver dal cooked with onion, tomato and tempered with cumin</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">DAL MAKHANI (350gms)</h3>
+                            <span class="menu-item-price">₹325</span>
+                        </div>
+                        <p class="menu-item-description">A traditional North Indian dish prepared with whole black gram simmered on charcoal oven topped with butter and desi ghee</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dessert -->
+            <section class="menu-section" id="dessert">
+                <h2 class="menu-category-title">DESSERT/SWEET</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">REGULAR ICE CREAM (2 scoops)</h3>
+                            <span class="menu-item-price">₹145</span>
+                        </div>
+                        <p class="menu-item-description">Vanilla / Chocolate / strawberry</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">HOMEMADE ICE CREAM (2 scoops)</h3>
+                            <span class="menu-item-price">₹200</span>
+                        </div>
+                        <p class="menu-item-description">Fresh - Ask your server for available flavours</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SHAHI KULFI</h3>
+                            <span class="menu-item-price">₹250</span>
+                        </div>
+                        <p class="menu-item-description">Malai kulfi with rabri and fresh rose syrup and shredded pista</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MOHAN THAL HOT</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">GULAB JAMUN</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                        <p class="menu-item-description">Our speciality</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MOONG DAL HALWA</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SIZZLING BROWNIE WITH ICE CREAM</h3>
+                            <span class="menu-item-price">₹295</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gujarati Nasto -->
+            <section class="menu-section" id="gujarati-nasto">
+                <h2 class="menu-category-title">GUJARATI NASTO</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">MIX BHAJIYA (275gms)</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                        <p class="menu-item-description">Potato, onion and green chilies coated in gram flour and deep fry</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BATAKA VADA (6pcs)</h3>
+                            <span class="menu-item-price">₹215</span>
+                        </div>
+                        <p class="menu-item-description">Mash potato coated with gram flour and fry, serve with date chutney</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">PATRA (8pcs)</h3>
+                            <span class="menu-item-price">₹225</span>
+                        </div>
+                        <p class="menu-item-description">Stuffed and rolled colocasia leaves served with green chutney</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">LILVA KACHORI (6pcs)</h3>
+                            <span class="menu-item-price">₹225</span>
+                        </div>
+                        <p class="menu-item-description">Fresh tuver dana chatpata snack taste best as starter</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SAMOSA (4pcs)</h3>
+                            <span class="menu-item-price">₹185</span>
+                        </div>
+                        <p class="menu-item-description">Flaky 'n' crispy outside and hot 'n' spicy in side</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">HANDVO (4pcs)</h3>
+                            <span class="menu-item-price">₹185</span>
+                        </div>
+                        <p class="menu-item-description">Wholesome steamed lentil veggie cake</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">SEV PURI (6pcs) / PANI PURI (10pcs)</h3>
+                            <span class="menu-item-price">₹175</span>
+                        </div>
+                        <p class="menu-item-description">Favourite street food for hunger cravings</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Menu Footer CTA -->
+        <div class="menu-footer-cta">
+            <div class="container">
+                <h2>Found something you like?</h2>
+                <a href="contact.html#reserve" class="animated-button reserve-btn centered">
+                    <span class="text">Book Table</span>
+                    <span class="circle"></span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>Fresh Roast<br>The Coffee Lounge & Multi Cuisine Restaurant</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Timings</h3>
+                    <p>11 am - 11 pm<br>All Days</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919638808069">+91 9638808069</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/freshroast.ahm/?igsh=aXdsazV2ZzJhY3du#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="https://www.facebook.com/FreshRoastTheCoffeeLounge/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fresh Roast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fresh Roast - The Coffee Lounge & Multi Cuisine Restaurant. 100% Vegetarian restaurant serving freshly brewed coffee and delicious multi-cuisine food.">
+    <meta name="keywords" content="restaurant, coffee, vegetarian, multi cuisine, Ahmedabad, Fresh Roast">
+    <meta name="author" content="Fresh Roast">
+    <title>Fresh Roast - The Coffee Lounge & Multi Cuisine Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader (first visit only) -->
+    <div class="loader" id="loader">
+        <div class="cup">
+            <div class="cup-handle"></div>
+            <div class="smoke one"></div>
+            <div class="smoke two"></div>
+            <div class="smoke three"></div>
+        </div>
+        <div class="load">Loading...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Fresh Roast" class="logo-img">
+                <span class="logo-text">Fresh Roast</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Visit</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-carousel" id="heroCarousel">
+                <div class="carousel-slide active" style="background-image: url('home.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('home1.jpg')"></div>
+                <div class="carousel-slide" style="background-image: url('home2.jpg')"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh Roast</h1>
+                <p class="hero-subtitle">The Coffee Lounge & Multi Cuisine Restaurant</p>
+                <div class="hero-cta">
+                    <a href="menu.html" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">View Menu</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                    <a href="contact.html#reserve" class="animated-button reserve-btn">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">Reserve Table</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Identity Strip -->
+        <section class="identity-strip">
+            <div class="container">
+                <div class="identity-item">
+                    <div class="identity-icon">🌱</div>
+                    <h3>100% Vegetarian</h3>
+                </div>
+                <div class="identity-item">
+                    <div class="identity-icon">☕</div>
+                    <h3>Freshly Brewed Coffee</h3>
+                </div>
+                <div class="identity-item">
+                    <div class="identity-icon">✨</div>
+                    <h3>Comfortable Ambience</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <div class="experience-image">
+                <img src="home.jpg" alt="Fresh Roast Ambience" loading="lazy">
+            </div>
+            <div class="experience-overlay"></div>
+            <div class="experience-content">
+                <p class="experience-text">A space designed for slow conversations, good food, and better coffee.</p>
+            </div>
+        </section>
+
+        <!-- Gentle CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Planning a visit?</h2>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">View Menu</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                    <a href="contact.html#reserve" class="animated-button reserve-btn">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">Book Table</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Address</h3>
+                    <p>Fresh Roast<br>The Coffee Lounge & Multi Cuisine Restaurant</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Timings</h3>
+                    <p>11 am - 11 pm<br>All Days</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919638808069">+91 9638808069</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/freshroast.ahm/?igsh=aXdsazV2ZzJhY3du#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="https://www.facebook.com/FreshRoastTheCoffeeLounge/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fresh Roast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
